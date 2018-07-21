@@ -1,0 +1,23 @@
+{
+  "name": "gmaprevanp",
+  "version": "1.0.0",
+  "description": "Shows places I visited, using Google maps API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolodymyrPliuta/gmap-Revamp.git"
+  },
+  "keywords": [
+    "gmap",
+    "GoogleAPI"
+  ],
+  "author": "Vladimir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VolodymyrPliuta/gmap-Revamp/issues"
+  },
+  "homepage": "https://github.com/VolodymyrPliuta/gmap-Revamp#readme"
+}
