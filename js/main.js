@@ -1,8 +1,5 @@
 function initMap() {
-  let cities = {
-    Jacksonville: {city: {lat: 30.274438, lng: -81.388347}, zoom: 5},
-    SF: {cityName: 'SanFrancisco', city: {lat: 37.761201, lng: -122.434701}, zoom: 5}
-  }
+  let cities = usCities;
   let map = createMap(cities.SF);
 }
 
@@ -14,4 +11,9 @@ function createMap({ city, zoom}) {
       zoom: zoom
     })
   )
+}
+
+const usCities = {
+  Jacksonville: {city: {lat: 30.274438, lng: -81.388347}, zoom: 5},
+  SF: {cityName: 'SanFrancisco', city: {lat: 37.761201, lng: -122.434701}, zoom: 8}
 }
