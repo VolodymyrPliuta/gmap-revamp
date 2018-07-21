@@ -2,6 +2,8 @@ function initMap() {
   let cities = usCities;
   let map = createMap(cities.SF);
   let marker = addMarker();
+
+  let markers = [];
 }
 
 function createMap({ city, zoom}) {
@@ -11,6 +13,12 @@ function createMap({ city, zoom}) {
       center: city,
       zoom: zoom
     })
+  )
+}
+
+function mapTheMarkers(map, neighborhoods, markers) {
+  return markers.push(
+    newMarker(neighborhoods, map)
   )
 }
 
