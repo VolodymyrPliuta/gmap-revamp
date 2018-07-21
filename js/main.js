@@ -1,9 +1,11 @@
 function initMap() {
   let cities = usCities;
   let map = createMap(cities.SF);
-  let marker = addMarker();
+  let neighborhoods = usNeighborhoods;
 
   let markers = [];
+
+  markers = mapTheMarkers(map, neighborhoods, markers)
 }
 
 function createMap({ city, zoom}) {
@@ -18,13 +20,20 @@ function createMap({ city, zoom}) {
 
 function mapTheMarkers(map, neighborhoods, markers) {
   return markers.push(
-    newMarker(neighborhoods, map)
+    newMarker(usNeighborhoods, map)
+  )
+}
+
+function newMarker(usNeighborhoods, map){
+  return new google.maps.Marker({
+    position: usNeighborhoods[1],
+    map: map}
   )
 }
 
 const usNeighborhoods = [
   {lat: 30.274438, lng:  -81.388347},
-  {lat: 28.546863, lng: -81.373917}
+  {lat: 37.761201, lng: -122.434701}
 ];
 
 const usCities = {
